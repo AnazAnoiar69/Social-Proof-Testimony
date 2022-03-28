@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #808080;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #502050;
+  font-weight: 700;
+}
+
+p {
+  line-height: 1.5;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  font-size: 15px;
+}
+
+body .container {
+  padding: 2rem 1rem;
+  background-image: url("./social-proof-section-master/images/bg-pattern-top-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top;
+}
+
+body .container .component .header {
+  text-align: center;
+}
+
+body .container .component .header > h1 {
+  padding: 0 2rem;
+  margin-top: 3rem;
+}
+
+body .container .component .header > p {
+  margin: 1rem 0;
+}
+
+body .container .component .star-review {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+body .container .component .star-review .star-card {
+  margin: 1rem 0;
+  padding: 1rem 0;
+  background-color: #f7f2f7;
+  border-radius: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 1rem;
+}
+
+body .container .component .star-review .star-card .star {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-column-gap: 0.5rem;
+          column-gap: 0.5rem;
+}
+
+body .container .component .star-review .star-card .star .star-icon {
+  width: 20px;
+  height: 20px;
+}
+
+body .container .component .star-review .star-card > h3 {
+  font-size: 1rem;
+}
+
+body .container .component .testimony {
+  padding: 1rem 0;
+}
+
+body .container .component .testimony .testimony-card {
+  background-color: #502050;
+  padding: 2rem 2.5rem;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  row-gap: 2rem;
+}
+
+body .container .component .testimony .testimony-card .user-testimony {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+  row-gap: 1rem;
+}
+
+body .container .component .testimony .testimony-card .user-testimony > img {
+  border-radius: 50%;
+  max-width: 3rem;
+  max-height: 3rem;
+}
+
+body .container .component .testimony .testimony-card .user-testimony .user-name > h3 {
+  color: white;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin: 0.25rem 0;
+}
+
+body .container .component .testimony .testimony-card .user-testimony .user-name > span {
+  color: #ee68a4;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+body .container .component .testimony .testimony-card > p {
+  color: white;
+  font-size: 0.8rem;
+  line-height: 1.6;
+}
+
+@media only screen and (min-width: 750px) {
+  .testimony {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    -webkit-column-gap: 1rem;
+            column-gap: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  .container {
+    background-image: url("./social-proof-section-master/images/bg-pattern-top-desktop.svg"), url("./social-proof-section-master/images/bg-pattern-bottom-desktop.svg") !important;
+    background-position: -100% -100%, 100% 100% !important;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 100vh;
+    background-size: contain;
+    padding: 0 6rem !important;
+    font-size: 1rem;
+  }
+  .container .component {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "header star" "testimony testimony";
+  }
+  .container .component .header {
+    text-align: left !important;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: header;
+    font-size: 2rem;
+  }
+  .container .component .header > h1 {
+    max-width: 80%;
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+  .container .component .header > p {
+    max-width: 90%;
+    font-size: 1rem;
+  }
+  .container .component .star-review {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .container .component .star-review .star-card {
+    width: 85%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+  .container .component .star-review .star-card .star {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    padding: 0 1rem;
+  }
+  .container .component .star-review .star-card > h3 {
+    padding: 0 1rem !important;
+  }
+  .container .component .star-review .star-card:nth-child(2) {
+    -ms-flex-item-align: center !important;
+        -ms-grid-row-align: center !important;
+        align-self: center !important;
+  }
+  .container .component .star-review .star-card:nth-child(3) {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .container .component .testimony {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: testimony;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: 1rem 1rem 1fr 1rem 1rem;
+        grid-template-rows: 1rem 1rem 1fr 1rem 1rem;
+  }
+  .container .component .testimony .testimony-card:nth-child(1) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1/2;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 3;
+    grid-row: 1/4;
+  }
+  .container .component .testimony .testimony-card:nth-child(2) {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 3;
+    grid-row: 2/5;
+  }
+  .container .component .testimony .testimony-card:nth-child(3) {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 3;
+    grid-row: 3/6;
+  }
+}
+/*# sourceMappingURL=style.css.map */
